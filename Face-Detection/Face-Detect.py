@@ -83,7 +83,7 @@ while True:
             msg.attach(p)
             s = smtplib.SMTP('smtp.gmail.com', 587)
             s.starttls()
-            s.login(fromaddr, "vaidikpatel9921")
+            s.login(fromaddr, "MAIL_PASSWORD")
             text = msg.as_string()
             s.sendmail(fromaddr, toaddr, text)
             print("Email sent sucessfully...")
